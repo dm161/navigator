@@ -20,11 +20,11 @@ func TestParse(t *testing.T) {
 		},
 		{
 			in:  "",
-			err: errCommandCannotBeEmpty,
+			err: ErrCommandCannotBeEmpty,
 		},
 		{
 			in:  "H",
-			err: errCommandInvalidValue,
+			err: ErrCommandInvalidValue,
 		},
 	} {
 		t.Run(fmt.Sprintf("tc-%d", name), func(t *testing.T) {
